@@ -1,35 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
 :root {
-    --primary-color: rgb(236, 236, 236);
-    --secondary-color: rgb(21, 21, 21);
-    --blue-color: #2bc5cd;
-    --orange-color: #ff693d;
-    --border: 2px solid var(--blue-color);
-    --spacing: 28px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Resto del CSS */
-  
-  
-  .school {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
-  }
-  
-  .student {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9e4ce16148dd5cbeb1065410/89f80abe-6acd-d8dc-a341-3e571206975b.jpg);
-  }
-  
-  .time {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/773a5aa425b1502aaac14708/f2b45624-c8f6-3aa0-0ee4-58adda3c89b0.jpg);
-  }
-  
-  .alumni {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg);
-  }
-  
-  .alumni,
-  .school,
-  .student,
-  .time {
-    background-size: cover;
-  }
+  --primary-color: rgb(236, 236, 236);
+  --secondary-color: rgb(21, 21, 21);
+  --blue-color: #2bc5cd;
+  --orange-color: #ff693d;
+  --border: 2px solid var(--blue-color);
+  --spacing: 28px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.school {
+  background-image: url(https://graffica.info/wp-content/uploads/2017/08/NBA-logo-png-download-free-1200x675.png);
+}
+
+.student {
+  background-image: url(https://a.espncdn.com/photo/2017/0519/r210880_4680x3212cc.jpg);
+}
+
+.time {
+  background-image: url(https://www.si.com/.image/t_share/MTY4MTI1NzEwMTY2MDA5MTA1/2015-0616-stephen-curry-x159719_tk1_1150jpg.jpg);
+}
+
+.alumni {
+  background-image: url(https://cdn.theathletic.com/app/uploads/2022/04/27020535/GettyImages-1240264153-scaled-e1651074796467.jpg);
+}
+
+.alumni,
+.school,
+.student,
+.time {
+  background-size: cover;
+}
