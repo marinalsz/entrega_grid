@@ -22,51 +22,74 @@ body {
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 1rem;
   width: 100%;
+  min-height: 100vh;
   padding: var(--spacing);
-  justify-content: center;
-  align-content: center;
+  border: var(--border);
+  grid-template-areas:
+  "header antetokounmpo allen"
+  "header main curry"
+  "morant footer footer";
 }
 
-.alumni,
-.school,
-.student,
-.time {
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows:
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr
+      1fr;
+    grid-template-areas:
+     "header"
+     "antetokounmpo"
+     "allen"
+     "main"
+     "curry"
+     "morant"
+     "footer"
+  }
+}
+
+.antetokounmpo,
+.allen,
+.curry,
+.morant {
   background-size: cover;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.403);
 }
 
 header {
-  grid-row: 1 / 3;
-  grid-column: 1 / 2;
+  grid-area: header;
   background-color: var(--blue-color);
   padding: var(--spacing);
 }
 
 h1{
+  text-align: start;
   text-transform: uppercase;
-  text-align: center;
   color: var(--primary-color);
 }
 
 p{
-  text-align: center;
+  text-align: start;
   color: var(--primary-color);
 }
 
-.school {
-  background-image: url(https://cdn.nba.com/teams/uploads/sites/1610612749/2024/04/2324_POTG_Template_WHT_UPDATE_Artboard-2.jpg);
-  grid-row: 1 / 2;
-  grid-column: 2 / 3;
+.antetokounmpo {
+  background-image: url(./assets/antetokounmpo.avif);
+  grid-area: antetokounmpo;
 }
 
-.student {
-  background-image: url(https://a.espncdn.com/photo/2017/0519/r210880_4680x3212cc.jpg);
-  grid-row: 1 / 2;
-  grid-column: 3 / 4;
+.allen {
+  background-image: url(./assets/allen.jpg);
+  grid-area: allen;
 }
 
 main {
-  grid-row: 2 / 3;
-  grid-column: 2 / 3;
+  grid-area: main;
   padding: var(--spacing);
   border: var(--border);
 }
@@ -75,29 +98,28 @@ h2{
   text-transform: uppercase;
   text-align: center;
   color: var(--blue-color);
+  padding: 50px;
 }
 
-.time {
-  background-image: url(https://www.si.com/.image/t_share/MTY4MTI1NzEwMTY2MDA5MTA1/2015-0616-stephen-curry-x159719_tk1_1150jpg.jpg);
-  grid-row: 2 / 3;
-  grid-column: 3 / 4;
+.curry {
+  background-image: url(./assets/curry.jpg);
+  grid-area: curry;
 }
 
-.alumni {
-  background-image: url(https://cdn.theathletic.com/app/uploads/2022/04/27020535/GettyImages-1240264153-scaled-e1651074796467.jpg);
-  grid-row: 3 / 4;
-  grid-column: 1 / 2;
+.morant {
+  background-image: url(./assets/morant.jpg);
+  grid-area: morant;
 }
 
 footer {
-  grid-row: 3 / 4;
-  grid-column: 2 / 4;
+  grid-area: footer;
   background-color: var(--red-color);
   padding: var(--spacing);
 }
 
 h3{
   color: var(--primary-color);
+  text-align: start;
 }
 
 button{
