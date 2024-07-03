@@ -63,6 +63,11 @@ body {
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.403);
 }
 
+section:not(:hover) {
+  filter: saturate(0);
+  opacity: 50%;
+}
+
 header {
   display: grid;
   grid-area: header;
