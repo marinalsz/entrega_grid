@@ -3,8 +3,8 @@
 :root {
   --primary-color: rgb(236, 236, 236);
   --secondary-color: rgb(21, 21, 21);
-  --blue-color: #1D428A;
-  --red-color: #C8102E;
+  --blue-color: #1d428a;
+  --red-color: #c8102e;
   --border: 2px solid var(--blue-color);
   --spacing: 28px;
 }
@@ -26,9 +26,9 @@ body {
   padding: var(--spacing);
   border: var(--border);
   grid-template-areas:
-  "header antetokounmpo allen"
-  "header main curry"
-  "morant footer footer";
+    "header antetokounmpo allen"
+    "header main curry"
+    "morant footer footer";
 }
 
 @media (max-width: 700px) {
@@ -43,13 +43,13 @@ body {
       1fr
       1fr;
     grid-template-areas:
-     "header"
-     "antetokounmpo"
-     "allen"
-     "main"
-     "curry"
-     "morant"
-     "footer"
+      "header"
+      "antetokounmpo"
+      "allen"
+      "main"
+      "curry"
+      "morant"
+      "footer";
   }
 }
 
@@ -58,22 +58,26 @@ body {
 .curry,
 .morant {
   background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.403);
 }
 
 header {
+  display: grid;
   grid-area: header;
   background-color: var(--blue-color);
   padding: var(--spacing);
+  grid-gap: 1rem;
 }
 
-h1{
+h1 {
   text-align: start;
   text-transform: uppercase;
   color: var(--primary-color);
 }
 
-p{
+p {
   text-align: start;
   color: var(--primary-color);
 }
@@ -94,7 +98,7 @@ main {
   border: var(--border);
 }
 
-h2{
+h2 {
   text-transform: uppercase;
   text-align: center;
   color: var(--blue-color);
@@ -112,19 +116,23 @@ h2{
 }
 
 footer {
+  display: grid;
   grid-area: footer;
   background-color: var(--red-color);
   padding: var(--spacing);
+  grid-gap: 1rem;
 }
 
-h3{
-  color: var(--primary-color);
+h3 {
   text-align: start;
+  color: var(--primary-color);
 }
 
-button{
+button {
+  background-color: var(--blue-color);
+  color: var(--primary-color);
   text-transform: uppercase;
-  font-weight: bold;
+  font-weight: bolder;
   height: 50px;
   width: 200px;
 }
