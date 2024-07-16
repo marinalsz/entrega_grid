@@ -137,6 +137,24 @@ p {
   color: var(--secondary-color);
   text-align: start;
   line-height: 1.4;
+  font-size: 1.2rem;
+}
+
+button {
+  background-color: var(--blue-color);
+  color: var(--primary-color);
+  text-transform: uppercase;
+  font-weight: bolder;
+  height: 50px;
+  width: 200px;
+  box-shadow: 5px 10px black;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--red-color);
 }
 
 header {
@@ -173,13 +191,6 @@ section:not(:hover) {
   grid-area: allen;
 }
 
-main {
-  grid-area: main;
-  padding: var(--spacing);
-  border: var(--border);
-  background-color: var(--primary-color);
-}
-
 .curry {
   background-image: url(./assets/curry.jpg);
   grid-area: curry;
@@ -190,27 +201,17 @@ main {
   grid-area: morant;
 }
 
+main {
+  grid-area: main;
+  padding: var(--spacing);
+  border: var(--border);
+  background-color: var(--primary-color);
+}
+
 footer {
   display: grid;
   grid-area: footer;
   background-color: var(--red-color);
   padding: var(--spacing);
   gap: var(--spacing);
-}
-
-button {
-  background-color: var(--blue-color);
-  color: var(--primary-color);
-  text-transform: uppercase;
-  font-weight: bolder;
-  height: 50px;
-  width: 200px;
-  box-shadow: 5px 10px black;
-  transition-duration: 0.5s;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--primary-color);
-  color: var(--red-color);
 }
